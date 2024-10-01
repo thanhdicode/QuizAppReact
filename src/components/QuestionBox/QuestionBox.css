@@ -1,0 +1,83 @@
+/* Define colors */
+:root {
+    --right-answer-color: #3B6561;
+    --wrong-answer-color: #6C505F;
+    --common-answer-color: #4F5684;
+}
+
+/* Quiz box */
+.q-box {
+    width: auto;
+    min-width: 333px;
+    max-width: 800px;
+    border-radius: 8px;
+    background-color: #414e619c;
+    /* Added box shadow for depth */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Quiz box head */
+.q-box_timer {
+    display: inline-block;
+    background-color: #212832;
+    color: yellow;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 50px 50px 0px 0px;
+    position: relative;
+    top: 11px;
+}
+
+.q-question {
+    background-color: #212832;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 11px;
+}
+
+/* Quiz box body */
+.q-box_body {
+    margin: 15px 0px;
+}
+
+.q-box_options {
+    background-color: var(--common-answer-color); /* Use custom color variable */
+    border: 1px solid #7A70ED;
+    margin: 9px 0px;
+    padding: 5px 0px;
+    border-radius: 30px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+}
+
+.q-box_options:hover {
+    background-color: #3f4468b5;
+    cursor: pointer;
+    /* Added transition for smoother hover effect */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.option-icon {
+    background-color: #7A70ED;
+    margin: 0px 6px;
+    padding: 6px 11px;
+    font-size: 12px;
+    border-radius: 50px;
+    /* Added hover effect for the option icon */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style for correct answers */
+.correct-answer {
+    background-color: var(--right-answer-color); /* Use custom color variable */
+    /* Add more specific styles for correct answers here */
+}
+
+/* Style for wrong answers */
+.wrong-answer {
+    background-color: var(--wrong-answer-color); /* Use custom color variable */
+    /* Add more specific styles for wrong answers here */
+}
