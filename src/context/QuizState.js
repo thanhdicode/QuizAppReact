@@ -1,5 +1,5 @@
-import QuizContext from "./quizContext";
 import { useEffect, useState } from "react";
+import QuizContext from "./quizContext";
 
 
 const QuizState = (props) => {
@@ -34,4 +34,4 @@ const QuizState = (props) => {
     )
 }
 
-export default QuizState
+export default QuizState;
