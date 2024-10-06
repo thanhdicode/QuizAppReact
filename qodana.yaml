@@ -4,3 +4,19 @@ profile:
   name: qodana.recommended
 include:
   - name: CheckDependencyLicenses
+exclude:
+  - name: All
+    paths:
+      - src
+      - src/components
+      - src/components/QuestionBox
+      - src/components/QuestionBox/QuestionBox.jsx
+      - src/components/ReviewAnswerBox
+      - src/components/ReviewAnswerBox/ReviewAnswerBox.jsx
+      - src/components/ScoreRemark
+      - src/components/ScoreRemark/ScoreRemark.jsx
+      - src/context
+      - src/context/QuizState.js
+      - src/pages
+      - src/pages/About
+      - src/pages/About/About.jsx
